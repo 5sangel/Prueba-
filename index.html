@@ -132,7 +132,7 @@
 <div id="love-message">
 Te quiero mucho de aqui al universo.Siempre estaré para ti precioso❤️(sé que no debo decirte así, pero quería hacerlo).
 </div>
-<img id="image-display" />
+
 
 <!-- Botones -->
 <div id="btn-container">
@@ -196,9 +196,8 @@ Te quiero mucho de aqui al universo.Siempre estaré para ti precioso❤️(sé q
   }
 
   function mostrarImagen() {
-    imageDisplay.src = 'c7cef716-9115-4631-8ff6-2d327a4dd6a1.jpeg'; // Asegúrate de subir esta imagen al mismo repositorio
-    imageDisplay.style.display = 'block';
-  }
+  loveMessage.innerHTML = '<img src="c7cef716-9115-4631-8ff6-2d327a4dd6a1.jpeg" style="max-width: 100%; max-height: 300px; border: 3px solid #FF69B4; border-radius: 10px;">';
+}
 
   document.addEventListener('click', function(e) {
     if (e.target.tagName !== 'BUTTON' && !e.target.closest('#btn-container')) {
